@@ -37,43 +37,52 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9C2C266D-35A3-465F-A297-0E21D54E5C89}</ProjectGuid>
     <RootNamespace>ixml</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Lib|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Lib|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Lib|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -105,26 +114,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</EnableManagedIncrementalBuild>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
     <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</EnableManagedIncrementalBuild>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</EnableManagedIncrementalBuild>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
     <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EnableManagedIncrementalBuild>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'">true</EnableManagedIncrementalBuild>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug Lib|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug Lib|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
     <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Debug Lib|x64'">true</EnableManagedIncrementalBuild>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Lib|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Lib|Win32'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Lib|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Lib|Win32'">$(SolutionDir)\build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
     <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Release Lib|Win32'">true</EnableManagedIncrementalBuild>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release Lib|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\lib\$(ProjectName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release Lib|x64'">$(SolutionDir)out.vc10.$(Platform)\$(Configuration)\tmp\$(ProjectName)\</IntDir>
@@ -157,7 +166,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\inc;..\..\upnp\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\msvc;..\..\upnp\inc;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG;WIN32;_USRDLL;LIBUPNP_EXPORTS;UPNP_USE_MSVCPP;IXML_HAVE_SCRIPTSUPPORT;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -169,6 +178,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>..\..\autoconfig.h</ForcedIncludeFiles>
     </ClCompile>
     <Lib>
       <AdditionalLibraryDirectories>$(OutDir)..\lib;$(OutDir)..\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -205,7 +215,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\inc;..\..\upnp\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\msvc;..\..\upnp\inc;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;RELEASE;NDEBUG;_WINDOWS;_USRDLL;LIBUPNP_EXPORTS;UPNP_USE_MSVCPP;IXML_HAVE_SCRIPTSUPPORT;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -250,7 +260,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\inc;..\..\upnp\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\msvc;..\..\upnp\inc;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IXML_HAVE_SCRIPTSUPPORT;DEBUG;WIN32;PTW32_STATIC_LIB;UPNP_STATIC_LIB;UPNP_USE_MSVCPP;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -262,6 +272,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>..\..\autoconfig.h</ForcedIncludeFiles>
     </ClCompile>
     <Lib>
       <AdditionalLibraryDirectories>$(OutDir)..\lib;$(OutDir)..\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -295,7 +306,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\inc;..\..\upnp\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ixml\inc;..\..\ixml\src\inc;..\msvc;..\..\upnp\inc;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IXML_HAVE_SCRIPTSUPPORT;WIN32;NDEBUG;RELEASE;_WINDOWS;PTW32_STATIC_LIB;UPNP_STATIC_LIB;UPNP_USE_MSVCPP;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -307,6 +318,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>..\..\autoconfig.h</ForcedIncludeFiles>
     </ClCompile>
     <Lib>
       <AdditionalLibraryDirectories>$(OutDir)..\lib;$(OutDir)..\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>

@@ -37,6 +37,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6227F51A-1498-4C4A-B213-F6FDED605125}</ProjectGuid>
     <RootNamespace>libupnp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Lib|Win32'" Label="Configuration">
@@ -44,44 +45,52 @@
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Lib|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Lib|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Lib|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>NotSet</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -173,7 +182,7 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\inc;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\threadutil\inc;..\..\pthreads;..\..\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\upnp\src\threadutil;..\..\..\pthreads;..\..\..\pthreads\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IXML_HAVE_SCRIPTSUPPORT;WIN32;NDEBUG;RELEASE;_WINDOWS;_USRDLL;LIBUPNP_EXPORTS;UPNP_USE_MSVCPP;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -189,6 +198,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>..\..\autoconfig.h</ForcedIncludeFiles>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -291,7 +301,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\inc;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\threadutil\inc;..\..\pthreads;..\..\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\upnp\src\threadutil;..\..\..\pthreads;..\..\..\pthreads\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IXML_HAVE_SCRIPTSUPPORT;DEBUG;WIN32;_WINDOWS;_USRDLL;LIBUPNP_EXPORTS;UPNP_USE_MSVCPP;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -306,6 +316,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>..\..\autoconfig.h</ForcedIncludeFiles>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -403,7 +414,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\inc;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\threadutil\inc;..\..\pthreads;..\..\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\upnp\src\threadutil;..\..\..\pthreads;..\..\..\pthreads\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IXML_HAVE_SCRIPTSUPPORT;WIN32;DEBUG;_WINDOWS;PTW32_STATIC_LIB;UPNP_STATIC_LIB;UPNP_USE_MSVCPP;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -417,8 +428,8 @@
       </BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>..\..\autoconfig.h</ForcedIncludeFiles>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -426,6 +437,7 @@
     </ResourceCompile>
     <Lib>
       <AdditionalLibraryDirectories>..\..\pthreads\;..\..\pthreads\lib;$(OutDir)..\lib\ixml;$(OutDir)..\lib\threadutil;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Iphlpapi.lib</AdditionalDependencies>
     </Lib>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -492,7 +504,7 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\inc;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\threadutil\inc;..\..\pthreads;..\..\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\msvc;..\..\upnp\inc;..\..\upnp\src\inc;..\..\ixml\inc;..\..\ixml\src\inc;..\..\upnp\src\threadutil;..\..\..\pthreads;..\..\..\pthreads\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>IXML_HAVE_SCRIPTSUPPORT;WIN32;NDEBUG;RELEASE;_WINDOWS;PTW32_STATIC_LIB;UPNP_STATIC_LIB;UPNP_USE_MSVCPP;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SECURE_SCL;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_AFX_SECURE_NO_WARNINGS;_AFX_SECURE_NO_DEPRECATE;_SECURE_ATL;_ATL_NO_COM_SUPPORT;_ATL_SECURE_NO_WARNINGS;_ATL_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -508,6 +520,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
+      <ForcedIncludeFiles>..\..\autoconfig.h</ForcedIncludeFiles>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -515,6 +528,7 @@
     </ResourceCompile>
     <Lib>
       <AdditionalLibraryDirectories>..\..\pthreads\;..\..\pthreads\lib;$(OutDir)..\lib\ixml;$(OutDir)..\lib\threadutil;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Iphlpapi.lib</AdditionalDependencies>
     </Lib>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -570,19 +584,26 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\upnp\src\api\ActionComplete.c" />
-    <ClCompile Include="..\..\upnp\src\api\ActionRequest.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpActionComplete.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpActionRequest.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpDiscovery.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpEvent.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpEventSubscribe.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpExtraHeaders.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpFileInfo.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpStateVarComplete.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpStateVarRequest.c" />
+    <ClCompile Include="..\..\upnp\src\api\UpnpSubscriptionRequest.c" />
     <ClCompile Include="..\..\upnp\src\genlib\client_table\client_table.c" />
-    <ClCompile Include="..\..\upnp\src\genlib\client_table\ClientSubscription.c" />
-    <ClCompile Include="..\..\upnp\src\api\Discovery.c" />
-    <ClCompile Include="..\..\upnp\src\api\Event.c" />
-    <ClCompile Include="..\..\upnp\src\api\EventSubscribe.c" />
-    <ClCompile Include="..\..\upnp\src\api\FileInfo.c" />
     <ClCompile Include="..\..\upnp\src\gena\gena_callback2.c" />
     <ClCompile Include="..\..\upnp\src\gena\gena_ctrlpt.c" />
     <ClCompile Include="..\..\upnp\src\gena\gena_device.c" />
+    <ClCompile Include="..\..\upnp\src\genlib\client_table\GenlibClientSubscription.c" />
     <ClCompile Include="..\..\upnp\src\genlib\net\http\httpparser.c" />
     <ClCompile Include="..\..\upnp\src\genlib\net\http\httpreadwrite.c" />
+    <ClCompile Include="..\..\upnp\src\genlib\util\list.c" />
+    <ClCompile Include="..\..\upnp\src\ssdp\SSDPResultData.c" />
+    <ClCompile Include="..\..\upnp\src\ssdp\SSDPResultDataCallback.c" />
     <ClCompile Include="..\..\upnp\src\uuid\md5.c" />
     <ClCompile Include="..\..\upnp\src\genlib\util\membuffer.c" />
     <ClCompile Include="..\..\upnp\src\genlib\miniserver\miniserver.c" />
@@ -594,13 +615,9 @@
     <ClCompile Include="..\..\upnp\src\genlib\net\sock.c" />
     <ClCompile Include="..\..\upnp\src\ssdp\ssdp_ctrlpt.c" />
     <ClCompile Include="..\..\upnp\src\ssdp\ssdp_device.c" />
-    <ClCompile Include="..\..\upnp\src\ssdp\ssdp_ResultData.c" />
     <ClCompile Include="..\..\upnp\src\ssdp\ssdp_server.c" />
     <ClCompile Include="..\..\upnp\src\genlib\net\http\statcodes.c" />
-    <ClCompile Include="..\..\upnp\src\api\StateVarComplete.c" />
-    <ClCompile Include="..\..\upnp\src\api\StateVarRequest.c" />
     <ClCompile Include="..\..\upnp\src\genlib\util\strintmap.c" />
-    <ClCompile Include="..\..\upnp\src\api\SubscriptionRequest.c" />
     <ClCompile Include="..\..\upnp\src\uuid\sysdep.c" />
     <ClCompile Include="..\..\upnp\src\genlib\util\upnp_timeout.c" />
     <ClCompile Include="..\..\upnp\src\api\upnpapi.c" />
@@ -615,16 +632,23 @@
     <ClCompile Include="..\..\upnp\src\win_dll.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\upnp\inc\ActionComplete.h" />
-    <ClInclude Include="..\..\upnp\inc\ActionRequest.h" />
-    <ClInclude Include="..\inc\autoconfig.h" />
+    <ClInclude Include="..\..\autoconfig.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpActionComplete.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpActionRequest.h" />
+    <ClInclude Include="..\..\upnp\inc\upnpconfig.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpDiscovery.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpEvent.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpEventSubscribe.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpExtraHeaders.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpFileInfo.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpStateVarComplete.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpStateVarRequest.h" />
+    <ClInclude Include="..\..\upnp\inc\UpnpSubscriptionRequest.h" />
+    <ClInclude Include="..\..\upnp\src\ssdp\SSDPResultData.h" />
+    <ClInclude Include="..\..\upnp\src\ssdp\SSDPResultDataCallback.h" />
     <ClInclude Include="..\..\upnp\inc\Callback.h" />
     <ClInclude Include="..\..\upnp\src\inc\client_table.h" />
     <ClInclude Include="..\..\upnp\src\inc\config.h" />
-    <ClInclude Include="..\..\upnp\inc\Discovery.h" />
-    <ClInclude Include="..\..\upnp\inc\Event.h" />
-    <ClInclude Include="..\..\upnp\inc\EventSubscribe.h" />
-    <ClInclude Include="..\..\upnp\inc\FileInfo.h" />
     <ClInclude Include="..\..\upnp\src\inc\gena.h" />
     <ClInclude Include="..\..\upnp\src\inc\gena_ctrlpt.h" />
     <ClInclude Include="..\..\upnp\src\inc\gena_device.h" />
@@ -639,15 +663,11 @@
     <ClInclude Include="..\..\upnp\src\inc\service_table.h" />
     <ClInclude Include="..\..\upnp\src\inc\soaplib.h" />
     <ClInclude Include="..\..\upnp\src\inc\sock.h" />
-    <ClInclude Include="..\..\upnp\src\ssdp\ssdp_ResultData.h" />
     <ClInclude Include="..\..\upnp\src\inc\ssdplib.h" />
     <ClInclude Include="..\..\upnp\src\inc\statcodes.h" />
-    <ClInclude Include="..\..\upnp\inc\StateVarComplete.h" />
-    <ClInclude Include="..\..\upnp\inc\StateVarRequest.h" />
     <ClInclude Include="..\..\upnp\src\inc\statuscodes.h" />
     <ClInclude Include="..\msvc\stdint.h" />
     <ClInclude Include="..\..\upnp\src\inc\strintmap.h" />
-    <ClInclude Include="..\..\upnp\inc\SubscriptionRequest.h" />
     <ClInclude Include="..\..\upnp\src\inc\sysdep.h" />
     <ClInclude Include="..\..\upnp\inc\TemplateInclude.h" />
     <ClInclude Include="..\..\upnp\inc\TemplateSource.h" />
@@ -656,7 +676,6 @@
     <ClInclude Include="..\..\upnp\inc\upnp.h" />
     <ClInclude Include="..\..\upnp\src\inc\upnp_timeout.h" />
     <ClInclude Include="..\..\upnp\src\inc\upnpapi.h" />
-    <ClInclude Include="..\inc\upnpconfig.h" />
     <ClInclude Include="..\..\upnp\inc\upnpdebug.h" />
     <ClInclude Include="..\..\upnp\inc\UpnpGlobal.h" />
     <ClInclude Include="..\..\upnp\inc\UpnpInet.h" />
@@ -673,13 +692,14 @@
     <ClInclude Include="..\..\upnp\src\inc\webserver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\pthreads\pthread.vcxproj">
+      <Project>{98a1ad27-110a-4c3e-af0c-4f967e536517}</Project>
+    </ProjectReference>
     <ProjectReference Include="ixml.vcxproj">
       <Project>{9c2c266d-35a3-465f-a297-0e21d54e5c89}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="threadutil.vcxproj">
       <Project>{1d3eef7a-d248-48c0-b6b5-eca229fe4b3d}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

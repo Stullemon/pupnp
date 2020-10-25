@@ -11,28 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\upnp\src\api\ActionComplete.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\ActionRequest.c">
-      <Filter>sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\upnp\src\genlib\client_table\client_table.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\genlib\client_table\ClientSubscription.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\Discovery.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\Event.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\EventSubscribe.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\FileInfo.c">
       <Filter>sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\upnp\src\gena\gena_callback2.c">
@@ -83,25 +62,13 @@
     <ClCompile Include="..\..\upnp\src\ssdp\ssdp_device.c">
       <Filter>sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\upnp\src\ssdp\ssdp_ResultData.c">
-      <Filter>sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\upnp\src\ssdp\ssdp_server.c">
       <Filter>sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\upnp\src\genlib\net\http\statcodes.c">
       <Filter>sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\StateVarComplete.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\StateVarRequest.c">
-      <Filter>sources</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\upnp\src\genlib\util\strintmap.c">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\upnp\src\api\SubscriptionRequest.c">
       <Filter>sources</Filter>
     </ClCompile>
     <ClCompile Include="..\..\upnp\src\uuid\sysdep.c">
@@ -140,17 +107,50 @@
     <ClCompile Include="..\..\upnp\src\win_dll.c">
       <Filter>sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpActionComplete.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpActionRequest.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpDiscovery.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpEvent.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpEventSubscribe.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpFileInfo.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpStateVarComplete.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpStateVarRequest.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpSubscriptionRequest.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\ssdp\SSDPResultData.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\api\UpnpExtraHeaders.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\ssdp\SSDPResultDataCallback.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\genlib\client_table\GenlibClientSubscription.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\upnp\src\genlib\util\list.c">
+      <Filter>sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\upnp\inc\ActionComplete.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\ActionRequest.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\inc\autoconfig.h">
-      <Filter>headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\upnp\inc\Callback.h">
       <Filter>headers</Filter>
     </ClInclude>
@@ -158,18 +158,6 @@
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\config.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\Discovery.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\Event.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\EventSubscribe.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\FileInfo.h">
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\gena.h">
@@ -214,19 +202,10 @@
     <ClInclude Include="..\..\upnp\src\inc\sock.h">
       <Filter>headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\upnp\src\ssdp\ssdp_ResultData.h">
-      <Filter>headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\ssdplib.h">
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\statcodes.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\StateVarComplete.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\StateVarRequest.h">
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\statuscodes.h">
@@ -236,9 +215,6 @@
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\strintmap.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\upnp\inc\SubscriptionRequest.h">
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\sysdep.h">
@@ -263,9 +239,6 @@
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\upnpapi.h">
-      <Filter>headers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\inc\upnpconfig.h">
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\inc\upnpdebug.h">
@@ -308,6 +281,48 @@
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\upnp\src\inc\webserver.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpActionComplete.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpActionRequest.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpDiscovery.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpEvent.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpEventSubscribe.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpExtraHeaders.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpFileInfo.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpSubscriptionRequest.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpStateVarComplete.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\UpnpStateVarRequest.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\src\ssdp\SSDPResultData.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\src\ssdp\SSDPResultDataCallback.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\upnp\inc\upnpconfig.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\autoconfig.h">
       <Filter>headers</Filter>
     </ClInclude>
   </ItemGroup>

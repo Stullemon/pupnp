@@ -96,7 +96,7 @@ pupnp.includes
 Makefile
 Makefile.in
 aclocal.m4
-autoconfig.h
+#autoconfig.h
 autoconfig.h.in
 autom4te.cache/
 build-aux/
@@ -112,7 +112,7 @@ m4/ltversion.m4
 m4/lt~obsolete.m4
 stamp-h1
 upnp/inc/stamp-h2
-upnp/inc/upnpconfig.h
+#upnp/inc/upnpconfig.h
 upnp/sample/common/config_sample.h
 upnp/sample/common/stamp-h3
 upnp/sample/tv_combo
